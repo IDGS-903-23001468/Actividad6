@@ -1,1 +1,3 @@
-hola
+Hola
+Este cambio fue realizado por el usuario 2.
+Estamos aprendiendo a utilizar Git. jejeje
