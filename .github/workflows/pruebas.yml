@@ -20,7 +20,13 @@ jobs:
           python-version: '3.10'
 
       - name: Instalar pytest
-        run: python -m pip install pytest
+        run: python -m pip install -r requirements.txt
 
-      - name: Ejecutar pruebas
-        run: python -m pytest
+      - name: Pruebas unitarias
+        run: python -m pytest test_operaciones.py
+
+      - name: Pruebas de integracion
+        run: python -m pytest test_integracion.py
+
+      - name: Pruebas de sistema
+        run: python -m pytest test_system.py
